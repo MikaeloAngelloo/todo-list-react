@@ -1,24 +1,24 @@
 import React from "react";
 import "./style.css";
 
-const Buttons = ({tasks, hideDoneTasks}) => {
-   if(tasks.length === 0){
+const Buttons = ({ tasks, hideDoneTasks }) => {
+  if (tasks.length === 0) {
     return null;
-   }
-   
-    return (
-        <div className="buttons">
-        <button className="buttons__button ">
+  }
+
+  return (
+    <div className="buttons">
+      <button className="buttons__button ">
         {hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
-        </button>
-        <button
+      </button>
+      <button
         className="buttons__button"
         disabled={tasks.every(({ done }) => done)}
-        >
+      >
         Ukończ wszystkie
-        </button>
+      </button>
     </div>
-)
+  );
 };
 
 export default Buttons;

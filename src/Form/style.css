@@ -11,7 +11,7 @@
     border: none;
     cursor: pointer;
     transition: 1s;
-    
+
 }
 
 .form__button:hover {
@@ -27,7 +27,7 @@
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 2px;
-    
+
 }
 
 @media(max-width: 767px) {
