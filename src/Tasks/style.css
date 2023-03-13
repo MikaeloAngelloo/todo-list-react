@@ -1,0 +1,58 @@
+.tasks {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+   
+}
+
+.tasks__item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 10px;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tasks__button {
+    border: none;
+    color: rgb(255, 255, 255);
+    width: 30px;
+    height: 30px;
+    
+    cursor: pointer;
+}
+.tasks__item--hidden {
+    display: none;
+}
+
+.tasks__content--done {
+    text-decoration: line-through;
+
+}
+
+.tasks__button--toggleDone {
+    background: rgb(7, 146, 7);
+}
+
+.tasks__button--toggleDone:hover {
+    background: rgb(0, 161, 0);
+    transition: 1s;
+}
+
+.tasks__button--toggleDone:active {
+    background: rgb(0, 214, 0);
+}
+
+.tasks__button--remove {
+    background: red;
+}
+
+.tasks__button--remove:hover {
+    background: rgb(253, 60, 60);
+    transition: 1s;
+}
+
+.tasks__button--remove:active {
+    background: rgb(241, 118, 118);
+}
